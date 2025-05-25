@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UrbanGent Co.</title>
+  <link rel="stylesheet" href="../css/mission-vision.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">UrbanGent Co.</div>
+    <nav class="nav-menu">
+      <a href="homepage.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Collection</a>
+      <a href="mission-vision.html">Goals</a>
+      <a href="reviews.html">Reviews</a>
+
+      <div class="dropdown" id="moreDropdown">
+        <button class="dropbtn" id="dropdownToggle">More <i class="fas fa-caret-down"></i></button>
+        <div class="dropdown-content" id="dropdownContent">
+          <a href="blog.html">Blog</a>
+          <a href="gallery.html">Shop</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+          <a href="profile.html">Profile</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+<!-- Mission, Vision & Goal Section -->
+<section class="mvg-section">
+  <div class="mvg-container">
+    <h2 class="section-title">Our Purpose</h2>
+    <div class="mvg-grid">
+      <div class="mvg-card">
+        <h3>Our Mission</h3>
+        <p>To empower modern men through bold streetwear that blends comfort, confidence, and contemporary urban style.</p>
+      </div>
+      <div class="mvg-card">
+        <h3>Our Vision</h3>
+        <p>To become the leading streetwear brand redefining men's fashion in the urban landscape—where authenticity meets expression.</p>
+      </div>
+      <div class="mvg-card">
+        <h3>Our Goal</h3>
+        <p>To craft versatile pieces that inspire individuality, fuel self-expression, and thrive in the dynamic rhythm of city life.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Dropdown Script -->
+  <script>
+    document.getElementById("dropdownToggle").addEventListener("click", function (e) {
+      e.stopPropagation();
+      document.getElementById("moreDropdown").classList.toggle("show");
+    });
+
+    document.addEventListener("click", function (e) {
+      const dropdown = document.getElementById("moreDropdown");
+      if (dropdown.classList.contains("show")) {
+        dropdown.classList.remove("show");
+      }
+    });
+  </script>
+</body>
+</html>

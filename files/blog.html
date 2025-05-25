@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UrbanGent Co.</title>
+  <link rel="stylesheet" href="../css/blogs.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">UrbanGent Co.</div>
+    <nav class="nav-menu">
+      <a href="homepage.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Collection</a>
+      <a href="mission-vision.html">Goals</a>
+      <a href="reviews.html">Reviews</a>
+
+      <div class="dropdown" id="moreDropdown">
+        <button class="dropbtn" id="dropdownToggle">More <i class="fas fa-caret-down"></i></button>
+        <div class="dropdown-content" id="dropdownContent">
+          <a href="blog.html">Blog</a>
+          <a href="gallery.html">Shop</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+          <a href="profile.html">Profile</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+<section class="blog-section">
+  <h2 class="section-title">From the Blog</h2>
+  <div class="blog-grid">
+    <article class="blog-post">
+      <img src="../images/blog1.png" alt="Blog Post 1">
+      <h3>Streetwear Trends 2025</h3>
+      <p>Discover the latest trends shaping urban fashion.</p>
+    </article>
+    <article class="blog-post">
+      <img src="../images/blog2.jpg" alt="Blog Post 2">
+      <h3>How to Style Utility Jackets</h3>
+      <p>Mix functionality with style in everyday wear.</p>
+    </article>
+    <article class="blog-post">
+      <img src="../images/blog3.jpg" alt="Blog Post 3">
+      <h3>Footwear for City Living</h3>
+      <p>Comfort and durability for the urban jungle.</p>
+    </article>
+    <article class="blog-post">
+      <img src="../images/blog5.jpg" alt="Blog Post 4">
+      <h3>Accessorizing with Confidence</h3>
+      <p>Adding the right touch to complete your look.</p>
+    </article>
+    <article class="blog-post">
+      <img src="../images/blog6.jpg" alt="Blog Post 5">
+      <h3>Seasonal Color Palettes</h3>
+      <p>Colors to refresh your wardrobe this season.</p>
+    </article>
+    <article class="blog-post">
+      <img src="../images/blog4.jpg" alt="Blog Post 6">
+      <h3>Urban Fashion on a Budget</h3>
+      <p>Looking great without breaking the bank.</p>
+    </article>
+  </div>
+</section>
+
+  <!-- Dropdown Script -->
+  <script>
+    document.getElementById("dropdownToggle").addEventListener("click", function (e) {
+      e.stopPropagation();
+      document.getElementById("moreDropdown").classList.toggle("show");
+    });
+
+    document.addEventListener("click", function (e) {
+      const dropdown = document.getElementById("moreDropdown");
+      if (dropdown.classList.contains("show")) {
+        dropdown.classList.remove("show");
+      }
+    });
+  </script>
+</body>
+</html>

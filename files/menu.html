@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UrbanGent Co.</title>
+  <link rel="stylesheet" href="../css/products.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">UrbanGent Co.</div>
+    <nav class="nav-menu">
+      <a href="homepage.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Collection</a>
+      <a href="mission-vision.html">Goals</a>
+      <a href="reviews.html">Reviews</a>
+
+      <div class="dropdown" id="moreDropdown">
+        <button class="dropbtn" id="dropdownToggle">More <i class="fas fa-caret-down"></i></button>
+        <div class="dropdown-content" id="dropdownContent">
+          <a href="blog.html">Blog</a>
+          <a href="gallery.html">Shop</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+          <a href="profile.html">Profile</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+<!-- Collection Section -->
+<section class="collection-section">
+  <h2 class="section-title">Our Latest Collection</h2>
+  <div class="collection-grid">
+    <img src="../images/look1.jpg" alt="Look 1">
+    <img src="../images/look2.jpg" alt="Look 2">
+    <img src="../images/look3.jpg" alt="Look 3">
+    <img src="../images/lok4.jpg" alt="Look 4">
+    <img src="../images/look5.jpg" alt="Look 5">
+    <img src="../images/look6.jpg" alt="Look 6">
+    <img src="../images/look7.jpg" alt="Look 7">
+    <img src="../images/look8.webp" alt="Look 8">
+  </div>
+</section>
+
+
+  <!-- Dropdown Script -->
+  <script>
+    document.getElementById("dropdownToggle").addEventListener("click", function (e) {
+      e.stopPropagation();
+      document.getElementById("moreDropdown").classList.toggle("show");
+    });
+
+    document.addEventListener("click", function (e) {
+      const dropdown = document.getElementById("moreDropdown");
+      if (dropdown.classList.contains("show")) {
+        dropdown.classList.remove("show");
+      }
+    });
+  </script>
+</body>
+</html>

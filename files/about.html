@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UrbanGent Co.</title>
+  <link rel="stylesheet" href="../css/about.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">UrbanGent Co.</div>
+    <nav class="nav-menu">
+      <a href="homepage.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Collection</a>
+      <a href="gallery.html">Lookbook</a>
+      <a href="reviews.html">Reviews</a>
+
+      <div class="dropdown" id="moreDropdown">
+        <button class="dropbtn" id="dropdownToggle">More <i class="fas fa-caret-down"></i></button>
+        <div class="dropdown-content" id="dropdownContent">
+          <a href="blog.html">Blog</a>
+          <a href="gallery.html">Shop</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+          <a href="profile.html">Profile</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+<section class="about-section">
+  <div class="about-container">
+    <div class="about-text">
+      <h2>About UrbanGent Co.</h2>
+      <p>UrbanGent Co. is a premium streetwear label made for bold city men. We blend comfort, confidence, and utility into every piece — empowering men to own their lifestyle with style and purpose.</p>
+    </div>
+    <div class="about-images">
+      <img src="../images/about1.webp" alt="Urban style 1">
+      <img src="../images/about2.jpg" alt="Urban style 2">
+    </div>
+  </div>
+</section>
+
+  <!-- Dropdown Script -->
+  <script>
+    document.getElementById("dropdownToggle").addEventListener("click", function (e) {
+      e.stopPropagation();
+      document.getElementById("moreDropdown").classList.toggle("show");
+    });
+
+    document.addEventListener("click", function (e) {
+      const dropdown = document.getElementById("moreDropdown");
+      if (dropdown.classList.contains("show")) {
+        dropdown.classList.remove("show");
+      }
+    });
+  </script>
+</body>
+</html>

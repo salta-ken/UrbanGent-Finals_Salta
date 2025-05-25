@@ -1,0 +1,150 @@
+/* Base Reset and Body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0a0a0a;
+  color: #f4f4f4;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background: linear-gradient(90deg, #1a1a1a, #2c2c2c);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+/* Nav Links */
+.nav-menu a {
+  margin: 0 1rem;
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background: none;
+  border: none;
+  color: #ccc;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.dropbtn i {
+  margin-left: 6px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1e1e1e;
+  min-width: 160px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background 0.3s;
+}
+
+.dropdown-content a:hover {
+  background-color: #333;
+}
+
+.dropdown.show .dropdown-content {
+  display: block;
+}
+.contact-section, .profile-section {
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: auto;
+  color: #fff;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  margin-bottom: 3rem;
+}
+
+.contact-section h2, .profile-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 1rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  background-color: #333;
+  color: #fff;
+  resize: vertical;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #bbb;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #d8a35d;
+  background-color: #444;
+}
+
+.btn-submit {
+  background-color: #d8a35d;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  color: #1a1a1a;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-self: center;
+  width: 160px;
+}
+
+.btn-submit:hover {
+  background-color: #c3953f;
+}

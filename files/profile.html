@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UrbanGent Co.</title>
+  <link rel="stylesheet" href="../css/web-designer.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">UrbanGent Co.</div>
+    <nav class="nav-menu">
+      <a href="homepage.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Collection</a>
+      <a href="mission-vision.html">Goals</a>
+      <a href="reviews.html">Reviews</a>
+
+      <div class="dropdown" id="moreDropdown">
+        <button class="dropbtn" id="dropdownToggle">More <i class="fas fa-caret-down"></i></button>
+        <div class="dropdown-content" id="dropdownContent">
+          <a href="blog.html">Blog</a>
+          <a href="gallery.html">Shop</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+          <a href="profile.html">Profile</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+ <!-- Profile Section -->
+<section class="profile-section">
+  <h2 class="section-title">About the Designer</h2>
+  <div class="profile-content">
+    <img src="../images/08456b16-d2cd-44da-855c-651f3e93f362-removebg-preview.png" alt="Designer Photo" class="profile-photo" />
+    <div class="profile-text">
+      <h3>Ken Salta</h3>
+      <p><strong>Experience in Webpage Design Class:</strong> The class helped me gain hands-on skills with HTML, CSS, and JavaScript, emphasizing real-world projects. It taught me how to balance creativity with usability and gave me confidence in front-end development.</p>
+      <p><strong>Reflection on Designing Process:</strong> Creating this webpage was an insightful experience that deepened my understanding of user-centered design and responsive layouts. I focused on simplicity and visual hierarchy to make the interface intuitive and engaging.</p>
+      
+    </div>
+  </div>
+</section>
+
+  <!-- Dropdown Script -->
+  <script>
+    document.getElementById("dropdownToggle").addEventListener("click", function (e) {
+      e.stopPropagation();
+      document.getElementById("moreDropdown").classList.toggle("show");
+    });
+
+    document.addEventListener("click", function (e) {
+      const dropdown = document.getElementById("moreDropdown");
+      if (dropdown.classList.contains("show")) {
+        dropdown.classList.remove("show");
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UrbanGent Co.</title>
+  <link rel="stylesheet" href="../css/reviews.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">UrbanGent Co.</div>
+    <nav class="nav-menu">
+      <a href="homepage.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Collection</a>
+      <a href="mission-vision.html">Goals</a>
+      <a href="reviews.html">Reviews</a>
+
+      <div class="dropdown" id="moreDropdown">
+        <button class="dropbtn" id="dropdownToggle">More <i class="fas fa-caret-down"></i></button>
+        <div class="dropdown-content" id="dropdownContent">
+          <a href="blog.html">Blog</a>
+          <a href="gallery.html">Shop</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+          <a href="profile.html">Profile</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+ <!-- Reviews Section -->
+<section class="reviews-section">
+  <h2 class="section-title">What Our Customers Say</h2>
+  <div class="reviews-grid">
+    <div class="review-card">
+      <img src="../images/look7.jpg" alt="User 1">
+      <h4>Marcus A.</h4>
+      <p>"The quality is amazing and I feel confident every time I wear UrbanGent."</p>
+      <div class="stars">★★★★★</div>
+    </div>
+    <div class="review-card">
+      <img src="../images/look5.jpg" alt="User 2">
+      <h4>Jayden M.</h4>
+      <p>"Stylish and comfortable. Perfect for my everyday city grind."</p>
+      <div class="stars">★★★★☆</div>
+    </div>
+    <div class="review-card">
+      <img src="../images/look6.jpg" alt="User 3">
+      <h4>Chris V.</h4>
+      <p>"Really impressed with the attention to detail in every piece."</p>
+      <div class="stars">★★★★★</div>
+    </div>
+  </div>
+</section>
+
+  <!-- Dropdown Script -->
+  <script>
+    document.getElementById("dropdownToggle").addEventListener("click", function (e) {
+      e.stopPropagation();
+      document.getElementById("moreDropdown").classList.toggle("show");
+    });
+
+    document.addEventListener("click", function (e) {
+      const dropdown = document.getElementById("moreDropdown");
+      if (dropdown.classList.contains("show")) {
+        dropdown.classList.remove("show");
+      }
+    });
+  </script>
+</body>
+</html>
